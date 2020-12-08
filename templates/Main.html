@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Main.css' %}" />
+</head>
+
+<body>
+    <form action="/Content" method="GET"> {% csrf_token %}
+        <div class="nav">
+            <li>
+                <div id="Text_Formatting">Text Formatting</div>
+            </li>
+        </div>
+        <div class="container">
+            <a>
+                <button class="btn btn1">Content</button>
+            </a>
+    </form>
+    <form action="/Check" method="GET"> {% csrf_token %}
+        <a>
+            <button class="btn btn2">Check</button>
+        </a>
+        </div>
+    </form>
+</body>
+
+</html>
